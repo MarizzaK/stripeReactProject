@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./routes/layout/Layout";
 import HomePage from "./routes/homepage/homePage";
 import SinglePage from "./routes/singlepage/singlePage";
+import Contact from "./routes/contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/:id",
         element: <SinglePage />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

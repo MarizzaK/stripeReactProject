@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./navbar.scss";
-// import { Link } from "react-router-dom";
-// import { AuthContext } from "../../context/AuthContext";
+import { Link } from "react-router-dom";
+// import Contact from "../../routes/contact/Contact";
+// import Movies from "../../routes/homepage/homePage";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,18 +14,17 @@ function Navbar() {
           <img src="https://img.icons8.com/?size=100&id=MePa4FpWig6Z&format=png&color=000000" />
           <span>Buy Movies</span>
         </a>
-        <a href="/">Movies</a>
-        <a href="/">Contact</a>
+        <Link to="/homepage">Movies</Link>
+        <Link to="/contact">Contact</Link>{" "}
       </div>
       <div className="right">
         {/* <div className="user">
           <span>username</span>
         </div> */}
 
-        <a href="/login">Login</a>
-        <a href="/register" className="register">
-          Register
-        </a>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Register</Link>
+
         <a href="/cart" className="cart">
           <img
             src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
@@ -40,11 +40,11 @@ function Navbar() {
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <a href="/homePage">Movies</a>
-          <a href="/contact">Contact</a>
-          <a href="/cart">Cart</a>
-          <a href="/login">Login</a>
-          <a href="/register">Register</a>
+          <Link to="/homepage">Movies</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/cart">Cart</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/register">Register</Link>
         </div>
       </div>
     </nav>
