@@ -2,7 +2,8 @@
   "dependencies": {
     "@react-google-maps/api": "^2.20.3",
     "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1"
+    "@types/react-dom": "^18.3.1",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "sass-embedded": "^1.79.5"
