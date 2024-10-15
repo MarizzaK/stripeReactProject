@@ -9,7 +9,11 @@ function Contact() {
         We'd love to hear from you! Please fill out the form below to get in
         touch.
       </p>
-      <form className="contact-form">
+      <form
+        className="contact-form"
+        action="https://formsubmit.co/marizza.karlin@icloud.com"
+        method="POST"
+      >
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" placeholder="Your Name" required />
