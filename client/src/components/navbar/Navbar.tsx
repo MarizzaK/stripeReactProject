@@ -14,7 +14,7 @@ function Navbar() {
           <img src="https://img.icons8.com/?size=100&id=MePa4FpWig6Z&format=png&color=000000" />
           <span>Buy Movies</span>
         </a>
-        <Link to="/homepage">Movies</Link>
+        {/* <Link to="/homepage">Movies</Link> */}
         <Link to="/contact">Contact</Link>{" "}
       </div>
       <div className="right">
