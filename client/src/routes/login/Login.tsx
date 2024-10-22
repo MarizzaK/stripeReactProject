@@ -70,7 +70,7 @@ function Login() {
           />
           <button disabled={isLoading}>Login</button>
           {error && <span>{error}</span>}
-          <Link to="/register">Don't you have an account?</Link>
+          <Link to="/register">Don't have an account?, register here</Link>
         </form>
       </div>
       <div className="imgContainer">

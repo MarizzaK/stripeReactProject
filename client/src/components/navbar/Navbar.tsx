@@ -36,7 +36,6 @@ function Navbar() {
           <>
             <Link to="/contact">Contact</Link>
             <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
           </>
         )}
 
@@ -60,7 +59,6 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
           <Link to="/cart">Cart</Link>
           <Link to="/login">Login</Link>
-          <Link to="/register">Register</Link>
         </div>
       </div>
     </nav>
