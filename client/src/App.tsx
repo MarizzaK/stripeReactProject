@@ -6,6 +6,7 @@ import Register from "./routes/register/Register";
 import Login from "./routes/login/Login";
 import AdminPage from "./routes/adminpage/AdminPage";
 import { Layout, RequireAuth } from "./routes/layout/Layout";
+import CartPage from "./routes/cart/CartPage";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/cart",
+        element: <CartPage />,
       },
     ],
   },

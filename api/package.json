@@ -16,7 +16,8 @@
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "semver": "^7.6.3"
+    "semver": "^7.6.3",
+    "stripe": "^17.2.1"
   },
   "devDependencies": {
     "prisma": "^5.20.0"
