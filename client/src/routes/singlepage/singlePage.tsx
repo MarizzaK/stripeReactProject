@@ -21,8 +21,8 @@ const SinglePage = () => {
         <p className="category">{item.category}</p>
         <p className="description">{item.description}</p>
         <p className="price">{item.price}:-</p>
-        <button>Add to cart</button>
-        <span>Added to cart</span>
+        {/* <button>Add to cart</button>
+        <span>Added to cart</span> */}
       </div>
     </div>
   );

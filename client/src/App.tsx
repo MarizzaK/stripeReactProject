@@ -10,6 +10,7 @@ import GoogleAnalytics from "react-ga4";
 
 const trackingId = "G-4Q1YWR9BCK";
 GoogleAnalytics.initialize(trackingId);
+import CartPage from "./routes/cart/CartPage";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/cart",
+        element: <CartPage />,
       },
     ],
   },

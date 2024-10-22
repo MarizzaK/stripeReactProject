@@ -2,12 +2,16 @@ import { useContext, useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import { useCart } from "../../context/CartContext";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   const authContext = useContext(AuthContext);
   const currentUser = authContext?.currentUser;
+
+  const { getTotalItems } = useCart();
+  const totalItems = getTotalItems();
 
   return (
     <nav>
@@ -36,12 +40,13 @@ function Navbar() {
           </>
         )}
 
-        <a href="/cart" className="cart">
-          <img
+        <Link to="/cart">
+          {/* <img
             src="https://img.icons8.com/?size=100&id=85080&format=png&color=000000"
             alt="Cart"
-          />
-        </a>
+          /> */}
+          <button className="cartIcon">Cart {totalItems} Items</button>
+        </Link>
 
         <div className="menuIcon">
           <img

@@ -23,17 +23,17 @@ nav {
     flex: 3;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
 
     .logo {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 1rem;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 0.5rem;
 
       img {
-        width: 28px;
+        width: 2rem;
       }
 
       span {
@@ -59,12 +59,12 @@ nav {
     }
 
     a {
-      padding: 12px 24px;
-      margin: 20px;
+      padding: 0.9rem 2rem;
+      margin: 1.2rem;
     }
     a {
-      padding: 12px 24px;
-      margin: 20px;
+      padding: 1rem 2rem;
+      margin: 1.2rem;
     }
 
     .user {
@@ -73,11 +73,11 @@ nav {
       font-weight: bold;
 
       .profile-btn {
-        width: 100px;
+        width: fit-content;
         background-color: #fece51;
         border: none;
         color: white;
-        padding: 10px 20px;
+        padding: 0.5rem 1rem;
         cursor: pointer;
         transition: background-color 0.3s;
 
@@ -96,13 +96,18 @@ nav {
       background-color: #fece51;
     }
 
-    .cart {
-      display: flex;
-      align-items: center;
+    .cartIcon {
+      width: 7rem;
+      background-color: #457b9d;
+      border: none;
+      color: white;
+      padding: 0.9rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
 
-      img {
-        width: 28px;
-      }
+      // img {
+      //   width: 28px;
+      // }
     }
 
     .menuIcon {
