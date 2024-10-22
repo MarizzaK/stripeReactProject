@@ -16,8 +16,8 @@ function Card({ item }: CardProps) {
         <div className="textContainer">
           <h2 className="title">{item.title}</h2>
           <p className="category">{item.category}</p>
-
           <p className="price">{item.price}:-</p>
+          <button>Add to cart</button>
         </div>
       </div>
     </div>

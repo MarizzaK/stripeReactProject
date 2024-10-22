@@ -5,6 +5,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #888;
 
   a {
     transition: all 0.4s ease;
@@ -71,12 +72,18 @@ nav {
       align-items: center;
       font-weight: bold;
 
-      img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 20px;
+      .profile-btn {
+        width: 100px;
+        background-color: #fece51;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #ffb700;
+        }
       }
 
       span {
