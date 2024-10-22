@@ -1,5 +1,7 @@
 @import "../../responsive.scss";
-.registerPage {
+
+.registerPage,
+.login {
   height: 100%;
   display: flex;
 
@@ -19,11 +21,18 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      width: 80%;
+      max-width: 400px;
+      min-width: 300px;
+      min-height: 450px;
+      justify-content: center;
 
       input {
         padding: 20px;
         border: 1px solid gray;
         border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       button {
@@ -34,6 +43,7 @@
         color: white;
         font-weight: bold;
         cursor: pointer;
+        width: 100%;
 
         &:disabled {
           background-color: #bed9d8;
@@ -54,9 +64,9 @@
     }
   }
 
-  .imgContainer {
+  .imgContainer,
+  .img {
     flex: 2;
-    // background-color: #fcf5f3;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -49,4 +49,6 @@ export default tseslint.config({
 });
 ```
 
-hej hej
+npm i dotenv
+npm i stripe
+npm

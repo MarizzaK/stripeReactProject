@@ -1,5 +1,5 @@
-import { useState, useContext } from "react";
 import "./login.scss";
+import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
@@ -48,7 +48,9 @@ function Login() {
   };
 
   return (
-    <div className="login">
+    <div className="registerPage">
+      {" "}
+      {/* Använd samma klass som register.tsx */}
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
           <h1>Welcome back</h1>
@@ -70,6 +72,14 @@ function Login() {
           {error && <span>{error}</span>}
           <Link to="/register">Don't you have an account?</Link>
         </form>
+      </div>
+      <div className="imgContainer">
+        {" "}
+        {/* Matcha samma klassnamn */}
+        <img
+          src="https://n-lightenment.com/wp-content/uploads/2015/10/movie-night11.jpg"
+          alt="Register background"
+        />
       </div>
     </div>
   );
