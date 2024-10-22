@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Card from "../../components/card/Card";
 import { listData } from "../../lib/dummydata";
 import { AuthContext } from "../../context/AuthContext";
+import "./homePage.scss";
 
 function HomePage() {
   const data = listData;
