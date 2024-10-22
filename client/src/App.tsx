@@ -6,6 +6,10 @@ import Register from "./routes/register/Register";
 import Login from "./routes/login/Login";
 import AdminPage from "./routes/adminpage/AdminPage";
 import { Layout, RequireAuth } from "./routes/layout/Layout";
+import GoogleAnalytics from "react-ga4";
+
+const trackingId = "G-4Q1YWR9BCK";
+GoogleAnalytics.initialize(trackingId);
 
 const router = createBrowserRouter([
   {
@@ -47,7 +51,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
