@@ -8,5 +8,11 @@
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "sass-embedded": "^1.79.5"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "deploy": "gh-pages -d build"
   }
 }
