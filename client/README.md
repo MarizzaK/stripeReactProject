@@ -52,3 +52,10 @@ export default tseslint.config({
 npm i dotenv
 npm i stripe
 npm
+
+DATABASE_URL= "DIN DATABAS"
+JWT_SECRET_KEY=
+STRIPE_SECRET_KEY=
+CLIENT_URL=
+
+"OBS! DETTA BEHÖVS I EN .ENV FIL FÖR ATT PROJEKTET SKALL FUNKA"
